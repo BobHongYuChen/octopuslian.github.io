@@ -3,12 +3,41 @@
   
     
     <entry>
+      <title>2019年计划要做的事</title>
+      <link href="/category/2019%E5%B9%B4%E8%AE%A1%E5%88%92%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/"/>
+      <url>/category/2019%E5%B9%B4%E8%AE%A1%E5%88%92%E8%A6%81%E5%81%9A%E7%9A%84%E4%BA%8B/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>目前了解到的会涉及以下方面：  </p><ul><li>流媒体服务<br>以Go语言为主；熟练掌握TCP/IP，HTTP原理；常用的MySQL和Redis数据库用法。  </li><li>视音频编解码<br>C/C++语言为主；  </li><li>图形图像<br>C/C++语言，OpenGL；Python语言，OpenCV。  </li></ul><h2 id="业余安排"><a href="#业余安排" class="headerlink" title="业余安排"></a>业余安排</h2><p>业余时间计划完成以下事情：  </p><h3 id="附加技能"><a href="#附加技能" class="headerlink" title="附加技能"></a>附加技能</h3><ul><li>熟悉JavaScript，争取能完成一个在线简历模板；  </li><li>熟练Java语言，希望能接1-2个毕设赚些零花钱；  </li><li>LeetCode每周一题；  <h3 id="阅读提升"><a href="#阅读提升" class="headerlink" title="阅读提升"></a>阅读提升</h3></li><li>极客时间上的四个专栏（左耳听风，趣谈网络，数据结构算法，数学基础）研读；  </li><li>开始尝试阅读大部头书CSAPP，UNP，具体数学，并认真完成章节的课后练习题；  </li><li>Medium上争取两周内翻译一篇和自己学习工作相关的技术文章；  </li><li>每天半小时学习口语；  <h3 id="培养兴趣爱好"><a href="#培养兴趣爱好" class="headerlink" title="培养兴趣爱好"></a>培养兴趣爱好</h3></li><li>学习下拍照摄影，争取给女友拍出美美的照片～  </li><li>继续在健身房练习街舞，希望今年可以练出托马斯回旋和简易的大风车；  </li><li>口琴可以吹出多音调的音乐；  <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2></li><li>继续维护我的英语学习项目<a href="https://github.com/OctopusLian/VocabularyMap" target="_blank" rel="noopener">VocabularyMap</a>，争取在九月底国庆前完成词根词汇的拓展并加上中文释义。  </li><li>继续坚持创作，幻想和思考。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 计划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>新的开始</title>
       <link href="/category/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/"/>
       <url>/category/%E6%96%B0%E7%9A%84%E5%BC%80%E5%A7%8B/</url>
       
         <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="自我介绍"><a href="#自我介绍" class="headerlink" title="自我介绍"></a>自我介绍</h2><p>大家好，我的网名叫不会飞的章鱼（Zoctopus Zhang），之前在博客园上坚持写技术博客长达两年半，截止目前已发布了两百多篇文章共二十多万人的访问量，同时在简书上写随笔积累有十二万余字。然而，我一直很想创建一个自己的Blog，记录一些平时工作和生活上的收获和心得。<br>今天这个愿望终于实现了，在此我很感谢我的好友冰水鉴心的远程帮助。  </p><h2 id="接下来准备做什么"><a href="#接下来准备做什么" class="headerlink" title="接下来准备做什么"></a>接下来准备做什么</h2><p>我本科学的专业是计算机科学与技术，2018年6月毕业后在一家上市游戏公司做了三个月的游戏服务器开发，之后因工作原因转行，目前主要做流媒体服务和与视音频相关的图形图像。<br>我想把我在工作中的学习心得和生活上的感悟记录下来。  </p><h2 id="那么，现在就开始吧"><a href="#那么，现在就开始吧" class="headerlink" title="那么，现在就开始吧"></a>那么，现在就开始吧</h2><p>我不知道这条路我会走多远，但我至今不后悔我做出的每一个选择。因为我知道：念念不忘，必有回响。 </p>]]></content>
       
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
       
       
     </entry>
