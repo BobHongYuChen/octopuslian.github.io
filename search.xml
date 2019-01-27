@@ -3,6 +3,33 @@
   
     
     <entry>
+      <title>剑指offer-面试题3-数组中重复的数字-题目一</title>
+      <link href="/category/%E5%89%91%E6%8C%87offer-%E9%9D%A2%E8%AF%95%E9%A2%983-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97-%E9%A2%98%E7%9B%AE%E4%B8%80/"/>
+      <url>/category/%E5%89%91%E6%8C%87offer-%E9%9D%A2%E8%AF%95%E9%A2%983-%E6%95%B0%E7%BB%84%E4%B8%AD%E9%87%8D%E5%A4%8D%E7%9A%84%E6%95%B0%E5%AD%97-%E9%A2%98%E7%9B%AE%E4%B8%80/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><h3 id="题目一：找出数组中重复的数字"><a href="#题目一：找出数组中重复的数字" class="headerlink" title="题目一：找出数组中重复的数字"></a>题目一：找出数组中重复的数字</h3><p>在一个长度为n的数组里的所有数字都在0~n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是重复的数字2或者3。  </p><h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><p>1，先把输入的数组排序；  </p><ul><li>从头到尾扫描排序后的数组。排序一个长度为n的数组需要O(nlogn)的时间。  </li></ul><p>2，利用哈希表；  </p><p>3，根据数组下表找重复数字；(过程会在后面详细写出)  </p><pre class=" language-cpp"><code class="language-cpp"><span class="token keyword">bool</span> <span class="token function">duplicate</span><span class="token punctuation">(</span><span class="token keyword">int</span> numbers<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> <span class="token keyword">int</span> length<span class="token punctuation">,</span> <span class="token keyword">int</span><span class="token operator">*</span> duplication<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token keyword">if</span><span class="token punctuation">(</span>numbers <span class="token operator">==</span> <span class="token keyword">nullptr</span> <span class="token operator">||</span> length <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>        <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">if</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token operator">||</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span>            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> length<span class="token punctuation">;</span> <span class="token operator">++</span>i<span class="token punctuation">)</span>    <span class="token punctuation">{</span>        <span class="token keyword">while</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> i<span class="token punctuation">)</span>        <span class="token punctuation">{</span>            <span class="token keyword">if</span><span class="token punctuation">(</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> numbers<span class="token punctuation">[</span>numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">)</span>            <span class="token punctuation">{</span>                <span class="token operator">*</span>duplication <span class="token operator">=</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>                <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>            <span class="token punctuation">}</span>            <span class="token comment" spellcheck="true">// 交换numbers[i]和numbers[numbers[i]]        </span>            <span class="token keyword">int</span> temp <span class="token operator">=</span> numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>            numbers<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> numbers<span class="token punctuation">[</span>temp<span class="token punctuation">]</span><span class="token punctuation">;</span>            numbers<span class="token punctuation">[</span>temp<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><h2 id="考点"><a href="#考点" class="headerlink" title="考点"></a>考点</h2><ul><li><p>对一维数组的理解。一维数组在内存中占据连续的空间，因此我们可以根据下标定位对应的元素。  </p></li><li><p>学会通过具体例子找出其中的规律。  </p></li></ul><p><a href="https://github.com/OctopusLian/CodingInterviewChinese2/blob/master/03_01_DuplicationInArray/FindDuplication.cpp" target="_blank" rel="noopener">本题源代码</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> offer到手 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 面试 </tag>
+            
+            <tag> 数组 </tag>
+            
+            <tag> 重复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>公司年会收获</title>
       <link href="/category/%E5%85%AC%E5%8F%B8%E5%B9%B4%E4%BC%9A%E6%94%B6%E8%8E%B7/"/>
       <url>/category/%E5%85%AC%E5%8F%B8%E5%B9%B4%E4%BC%9A%E6%94%B6%E8%8E%B7/</url>
@@ -48,11 +75,11 @@
       
         <tags>
             
+            <tag> 成长 </tag>
+            
             <tag> 知识付费 </tag>
             
             <tag> 焦虑 </tag>
-            
-            <tag> 成长 </tag>
             
         </tags>
       
